@@ -1,0 +1,20 @@
+box: wercker/default
+build:
+  steps:
+    - script:
+        name: set version
+        code: export DEP_VERSION="v0.3.1"
+
+    - script:
+        name: fetch dep
+        code: |-
+          curl -L -o ./dep https://github.com/golang/dep/releases/download/{$DEP_VERSION}/dep-linux-amd64
+          chmod +x ./dep
+
+    - script:
+        name: simple test dep
+        code: ./dep version
+
+    - script:
+        name: prune
+        code: rm -rf .git

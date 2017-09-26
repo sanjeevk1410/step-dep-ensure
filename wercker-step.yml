@@ -1,0 +1,7 @@
+name: dep-ensure
+version: 0.3.1
+description: using dep to ensure dependencies
+keywords:
+  - dep
+  - go
+  - golang
