@@ -1,4 +1,4 @@
-box: wercker
+box: wercker/default
 build:
   steps:
     - script:
