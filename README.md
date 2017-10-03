@@ -1,6 +1,6 @@
 # dep-ensure
 
-Using [dep](https://github.com/golang/dep) to ensurel your Go dependencies.
+Using [dep](https://github.com/golang/dep) to ensure your Go dependencies versions.
 
 # Example
 
